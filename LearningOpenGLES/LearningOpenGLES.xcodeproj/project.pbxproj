@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		EADFB4AE1E484AA400FFFF5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4AD1E484AA400FFFF5D /* main.m */; };
 		EADFB4B11E484AA400FFFF5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4B01E484AA400FFFF5D /* AppDelegate.m */; };
-		EADFB4B41E484AA400FFFF5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4B31E484AA400FFFF5D /* ViewController.m */; };
 		EADFB4B71E484AA400FFFF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADFB4B51E484AA400FFFF5D /* Main.storyboard */; };
 		EADFB4B91E484AA400FFFF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADFB4B81E484AA400FFFF5D /* Assets.xcassets */; };
 		EADFB4BC1E484AA400FFFF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADFB4BA1E484AA400FFFF5D /* LaunchScreen.storyboard */; };
+		EADFB4C51E48506700FFFF5D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EADFB4C41E48506700FFFF5D /* GLKit.framework */; };
+		EADFB4C71E48507600FFFF5D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EADFB4C61E48507600FFFF5D /* OpenGLES.framework */; };
+		EADFB4CA1E4850C800FFFF5D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4C91E4850C800FFFF5D /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,14 @@
 		EADFB4AD1E484AA400FFFF5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EADFB4AF1E484AA400FFFF5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EADFB4B01E484AA400FFFF5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EADFB4B21E484AA400FFFF5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EADFB4B31E484AA400FFFF5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EADFB4B61E484AA400FFFF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EADFB4B81E484AA400FFFF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EADFB4BB1E484AA400FFFF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EADFB4BD1E484AA400FFFF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EADFB4C41E48506700FFFF5D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		EADFB4C61E48507600FFFF5D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EADFB4C81E4850C800FFFF5D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		EADFB4C91E4850C800FFFF5D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EADFB4C71E48507600FFFF5D /* OpenGLES.framework in Frameworks */,
+				EADFB4C51E48506700FFFF5D /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				EADFB4AB1E484AA400FFFF5D /* LearningOpenGLES */,
 				EADFB4AA1E484AA400FFFF5D /* Products */,
+				EADFB4C31E48506600FFFF5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,13 +67,13 @@
 			children = (
 				EADFB4AF1E484AA400FFFF5D /* AppDelegate.h */,
 				EADFB4B01E484AA400FFFF5D /* AppDelegate.m */,
-				EADFB4B21E484AA400FFFF5D /* ViewController.h */,
-				EADFB4B31E484AA400FFFF5D /* ViewController.m */,
 				EADFB4B51E484AA400FFFF5D /* Main.storyboard */,
 				EADFB4B81E484AA400FFFF5D /* Assets.xcassets */,
 				EADFB4BA1E484AA400FFFF5D /* LaunchScreen.storyboard */,
 				EADFB4BD1E484AA400FFFF5D /* Info.plist */,
 				EADFB4AC1E484AA400FFFF5D /* Supporting Files */,
+				EADFB4C81E4850C800FFFF5D /* FirstViewController.h */,
+				EADFB4C91E4850C800FFFF5D /* FirstViewController.m */,
 			);
 			path = LearningOpenGLES;
 			sourceTree = "<group>";
@@ -77,6 +84,15 @@
 				EADFB4AD1E484AA400FFFF5D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EADFB4C31E48506600FFFF5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EADFB4C61E48507600FFFF5D /* OpenGLES.framework */,
+				EADFB4C41E48506700FFFF5D /* GLKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EADFB4B41E484AA400FFFF5D /* ViewController.m in Sources */,
 				EADFB4B11E484AA400FFFF5D /* AppDelegate.m in Sources */,
+				EADFB4CA1E4850C800FFFF5D /* FirstViewController.m in Sources */,
 				EADFB4AE1E484AA400FFFF5D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
