@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA7B0F741E4B495100969E34 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7B0F731E4B495100969E34 /* grid.png */; };
+		EA7B0F771E4B51B000969E34 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B0F761E4B51B000969E34 /* SecondViewController.m */; };
+		EA7B0F791E4B54DE00969E34 /* beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7B0F781E4B54DE00969E34 /* beetle.png */; };
 		EADFB4AE1E484AA400FFFF5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4AD1E484AA400FFFF5D /* main.m */; };
 		EADFB4B11E484AA400FFFF5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4B01E484AA400FFFF5D /* AppDelegate.m */; };
 		EADFB4B71E484AA400FFFF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADFB4B51E484AA400FFFF5D /* Main.storyboard */; };
@@ -21,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA7B0F731E4B495100969E34 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		EA7B0F751E4B51B000969E34 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		EA7B0F761E4B51B000969E34 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		EA7B0F781E4B54DE00969E34 /* beetle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beetle.png; sourceTree = "<group>"; };
 		EADFB4A91E484AA400FFFF5D /* LearningOpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningOpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADFB4AD1E484AA400FFFF5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EADFB4AF1E484AA400FFFF5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,7 +63,9 @@
 		EADFB4A01E484AA400FFFF5D = {
 			isa = PBXGroup;
 			children = (
+				EA7B0F781E4B54DE00969E34 /* beetle.png */,
 				EAFFAA451E4AE59B00E2A36E /* leaves.gif */,
+				EA7B0F731E4B495100969E34 /* grid.png */,
 				EADFB4AB1E484AA400FFFF5D /* LearningOpenGLES */,
 				EADFB4AA1E484AA400FFFF5D /* Products */,
 				EADFB4C31E48506600FFFF5D /* Frameworks */,
@@ -87,6 +96,8 @@
 				EADFB4AC1E484AA400FFFF5D /* Supporting Files */,
 				EADFB4C81E4850C800FFFF5D /* FirstViewController.h */,
 				EADFB4C91E4850C800FFFF5D /* FirstViewController.m */,
+				EA7B0F751E4B51B000969E34 /* SecondViewController.h */,
+				EA7B0F761E4B51B000969E34 /* SecondViewController.m */,
 			);
 			path = LearningOpenGLES;
 			sourceTree = "<group>";
@@ -167,7 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7B0F791E4B54DE00969E34 /* beetle.png in Resources */,
 				EADFB4BC1E484AA400FFFF5D /* LaunchScreen.storyboard in Resources */,
+				EA7B0F741E4B495100969E34 /* grid.png in Resources */,
 				EADFB4B91E484AA400FFFF5D /* Assets.xcassets in Resources */,
 				EAFFAA461E4AE59C00E2A36E /* leaves.gif in Resources */,
 				EADFB4B71E484AA400FFFF5D /* Main.storyboard in Resources */,
@@ -181,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7B0F771E4B51B000969E34 /* SecondViewController.m in Sources */,
 				EADFB4B11E484AA400FFFF5D /* AppDelegate.m in Sources */,
 				EAFFAA4C1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.m in Sources */,
 				EADFB4CA1E4850C800FFFF5D /* FirstViewController.m in Sources */,

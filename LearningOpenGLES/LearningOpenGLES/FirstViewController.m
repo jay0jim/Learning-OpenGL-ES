@@ -71,6 +71,7 @@ static SceneVertex vertices[] = {
     CGImageRef imageRef = [[UIImage imageNamed:@"leaves.gif"] CGImage];
     
     GLKTextureInfo *textureInfo = [GLKTextureLoader textureWithCGImage:imageRef options:nil error:nil];
+    glTexParameteri(textureInfo.target, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     
     self.baseEffect.texture2d0.name = textureInfo.name;
     self.baseEffect.texture2d0.target = textureInfo.target;
