@@ -8,8 +8,8 @@
 
 #import "FirstViewController.h"
 
-#import "TLGLKContext.h"
-#import "TLGLKVertexAttribArrayBuffer.h"
+#import <TLGLKContext.h>
+#import <TLGLKVertexAttribArrayBuffer.h>
 
 @interface FirstViewController ()
 

@@ -8,8 +8,8 @@
 
 #import "SecondViewController.h"
 
-#import "TLGLKContext.h"
-#import "TLGLKVertexAttribArrayBuffer.h"
+#import <TLGLKContext.h>
+#import <TLGLKVertexAttribArrayBuffer.h>
 
 @interface SecondViewController ()
 

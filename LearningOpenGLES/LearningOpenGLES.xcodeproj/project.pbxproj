@@ -10,6 +10,7 @@
 		EA7B0F741E4B495100969E34 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7B0F731E4B495100969E34 /* grid.png */; };
 		EA7B0F771E4B51B000969E34 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B0F761E4B51B000969E34 /* SecondViewController.m */; };
 		EA7B0F791E4B54DE00969E34 /* beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = EA7B0F781E4B54DE00969E34 /* beetle.png */; };
+		EAA5FFCB1E4C34C10023BA08 /* libTLGLLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA5FFCA1E4C34C10023BA08 /* libTLGLLib.a */; };
 		EADFB4AE1E484AA400FFFF5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4AD1E484AA400FFFF5D /* main.m */; };
 		EADFB4B11E484AA400FFFF5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4B01E484AA400FFFF5D /* AppDelegate.m */; };
 		EADFB4B71E484AA400FFFF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EADFB4B51E484AA400FFFF5D /* Main.storyboard */; };
@@ -19,8 +20,6 @@
 		EADFB4C71E48507600FFFF5D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EADFB4C61E48507600FFFF5D /* OpenGLES.framework */; };
 		EADFB4CA1E4850C800FFFF5D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADFB4C91E4850C800FFFF5D /* FirstViewController.m */; };
 		EAFFAA461E4AE59C00E2A36E /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = EAFFAA451E4AE59B00E2A36E /* leaves.gif */; };
-		EAFFAA491E4AEB0300E2A36E /* TLGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFAA481E4AEB0300E2A36E /* TLGLKContext.m */; };
-		EAFFAA4C1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFFAA4B1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +27,7 @@
 		EA7B0F751E4B51B000969E34 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		EA7B0F761E4B51B000969E34 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		EA7B0F781E4B54DE00969E34 /* beetle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beetle.png; sourceTree = "<group>"; };
+		EAA5FFCA1E4C34C10023BA08 /* libTLGLLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTLGLLib.a; path = "TLGLLib/build/Debug-iphoneos/libTLGLLib.a"; sourceTree = "<group>"; };
 		EADFB4A91E484AA400FFFF5D /* LearningOpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningOpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADFB4AD1E484AA400FFFF5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EADFB4AF1E484AA400FFFF5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,10 +41,6 @@
 		EADFB4C81E4850C800FFFF5D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		EADFB4C91E4850C800FFFF5D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		EAFFAA451E4AE59B00E2A36E /* leaves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaves.gif; sourceTree = "<group>"; };
-		EAFFAA471E4AEB0300E2A36E /* TLGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGLKContext.h; sourceTree = "<group>"; };
-		EAFFAA481E4AEB0300E2A36E /* TLGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGLKContext.m; sourceTree = "<group>"; };
-		EAFFAA4A1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
-		EAFFAA4B1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA5FFCB1E4C34C10023BA08 /* libTLGLLib.a in Frameworks */,
 				EADFB4C71E48507600FFFF5D /* OpenGLES.framework in Frameworks */,
 				EADFB4C51E48506700FFFF5D /* GLKit.framework in Frameworks */,
 			);
@@ -83,10 +80,6 @@
 		EADFB4AB1E484AA400FFFF5D /* LearningOpenGLES */ = {
 			isa = PBXGroup;
 			children = (
-				EAFFAA471E4AEB0300E2A36E /* TLGLKContext.h */,
-				EAFFAA481E4AEB0300E2A36E /* TLGLKContext.m */,
-				EAFFAA4A1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.h */,
-				EAFFAA4B1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.m */,
 				EADFB4AF1E484AA400FFFF5D /* AppDelegate.h */,
 				EADFB4B01E484AA400FFFF5D /* AppDelegate.m */,
 				EADFB4B51E484AA400FFFF5D /* Main.storyboard */,
@@ -113,6 +106,7 @@
 		EADFB4C31E48506600FFFF5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAA5FFCA1E4C34C10023BA08 /* libTLGLLib.a */,
 				EADFB4C61E48507600FFFF5D /* OpenGLES.framework */,
 				EADFB4C41E48506700FFFF5D /* GLKit.framework */,
 			);
@@ -196,10 +190,8 @@
 			files = (
 				EA7B0F771E4B51B000969E34 /* SecondViewController.m in Sources */,
 				EADFB4B11E484AA400FFFF5D /* AppDelegate.m in Sources */,
-				EAFFAA4C1E4AF33300E2A36E /* TLGLKVertexAttribArrayBuffer.m in Sources */,
 				EADFB4CA1E4850C800FFFF5D /* FirstViewController.m in Sources */,
 				EADFB4AE1E484AA400FFFF5D /* main.m in Sources */,
-				EAFFAA491E4AEB0300E2A36E /* TLGLKContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,9 +310,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UVLX4292NF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/TLGLLib/**";
 				INFOPLIST_FILE = LearningOpenGLES/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TLGLLib/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.LearningOpenGLES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -331,9 +328,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UVLX4292NF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/TLGLLib/**";
 				INFOPLIST_FILE = LearningOpenGLES/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TLGLLib/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.LearningOpenGLES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

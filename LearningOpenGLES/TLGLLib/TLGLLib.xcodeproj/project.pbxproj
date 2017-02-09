@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAA5FFB81E4C32520023BA08 /* TLGLLib.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFB71E4C32520023BA08 /* TLGLLib.m */; };
+		EAA5FFB91E4C32520023BA08 /* TLGLLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAA5FFB61E4C32520023BA08 /* TLGLLib.h */; };
+		EAA5FFC31E4C32A70023BA08 /* TLGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFC01E4C32A70023BA08 /* TLGLKContext.m */; };
+		EAA5FFC41E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFC21E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m */; };
+		EAA5FFC71E4C33690023BA08 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA5FFC61E4C33690023BA08 /* GLKit.framework */; };
+		EAA5FFC91E4C336F0023BA08 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA5FFC81E4C336F0023BA08 /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAA5FFB11E4C32520023BA08 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				EAA5FFB91E4C32520023BA08 /* TLGLLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EAA5FFB31E4C32520023BA08 /* libTLGLLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTLGLLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA5FFB61E4C32520023BA08 /* TLGLLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLGLLib.h; sourceTree = "<group>"; };
+		EAA5FFB71E4C32520023BA08 /* TLGLLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLGLLib.m; sourceTree = "<group>"; };
+		EAA5FFBF1E4C32A70023BA08 /* TLGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGLKContext.h; sourceTree = "<group>"; };
+		EAA5FFC01E4C32A70023BA08 /* TLGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGLKContext.m; sourceTree = "<group>"; };
+		EAA5FFC11E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		EAA5FFC21E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		EAA5FFC61E4C33690023BA08 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		EAA5FFC81E4C336F0023BA08 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAA5FFB01E4C32520023BA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA5FFC91E4C336F0023BA08 /* OpenGLES.framework in Frameworks */,
+				EAA5FFC71E4C33690023BA08 /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAA5FFAA1E4C32520023BA08 = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFB51E4C32520023BA08 /* TLGLLib */,
+				EAA5FFB41E4C32520023BA08 /* Products */,
+				EAA5FFC51E4C33690023BA08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAA5FFB41E4C32520023BA08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFB31E4C32520023BA08 /* libTLGLLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAA5FFB51E4C32520023BA08 /* TLGLLib */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFBF1E4C32A70023BA08 /* TLGLKContext.h */,
+				EAA5FFC01E4C32A70023BA08 /* TLGLKContext.m */,
+				EAA5FFC11E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.h */,
+				EAA5FFC21E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m */,
+				EAA5FFB61E4C32520023BA08 /* TLGLLib.h */,
+				EAA5FFB71E4C32520023BA08 /* TLGLLib.m */,
+			);
+			path = TLGLLib;
+			sourceTree = "<group>";
+		};
+		EAA5FFC51E4C33690023BA08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFC81E4C336F0023BA08 /* OpenGLES.framework */,
+				EAA5FFC61E4C33690023BA08 /* GLKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAA5FFB21E4C32520023BA08 /* TLGLLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA5FFBC1E4C32520023BA08 /* Build configuration list for PBXNativeTarget "TLGLLib" */;
+			buildPhases = (
+				EAA5FFAF1E4C32520023BA08 /* Sources */,
+				EAA5FFB01E4C32520023BA08 /* Frameworks */,
+				EAA5FFB11E4C32520023BA08 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLGLLib;
+			productName = TLGLLib;
+			productReference = EAA5FFB31E4C32520023BA08 /* libTLGLLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAA5FFAB1E4C32520023BA08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Tony;
+				TargetAttributes = {
+					EAA5FFB21E4C32520023BA08 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UVLX4292NF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EAA5FFAE1E4C32520023BA08 /* Build configuration list for PBXProject "TLGLLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EAA5FFAA1E4C32520023BA08;
+			productRefGroup = EAA5FFB41E4C32520023BA08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAA5FFB21E4C32520023BA08 /* TLGLLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAA5FFAF1E4C32520023BA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA5FFC41E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m in Sources */,
+				EAA5FFC31E4C32A70023BA08 /* TLGLKContext.m in Sources */,
+				EAA5FFB81E4C32520023BA08 /* TLGLLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EAA5FFBA1E4C32520023BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAA5FFBB1E4C32520023BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA5FFBD1E4C32520023BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UVLX4292NF;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EAA5FFBE1E4C32520023BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UVLX4292NF;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA5FFAE1E4C32520023BA08 /* Build configuration list for PBXProject "TLGLLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA5FFBA1E4C32520023BA08 /* Debug */,
+				EAA5FFBB1E4C32520023BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA5FFBC1E4C32520023BA08 /* Build configuration list for PBXNativeTarget "TLGLLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA5FFBD1E4C32520023BA08 /* Debug */,
+				EAA5FFBE1E4C32520023BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAA5FFAB1E4C32520023BA08 /* Project object */;
+}
