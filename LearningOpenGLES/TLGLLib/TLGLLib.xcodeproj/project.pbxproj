@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EAA5FFB81E4C32520023BA08 /* TLGLLib.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFB71E4C32520023BA08 /* TLGLLib.m */; };
-		EAA5FFB91E4C32520023BA08 /* TLGLLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAA5FFB61E4C32520023BA08 /* TLGLLib.h */; };
 		EAA5FFC31E4C32A70023BA08 /* TLGLKContext.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFC01E4C32A70023BA08 /* TLGLKContext.m */; };
 		EAA5FFC41E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFC21E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m */; };
 		EAA5FFC71E4C33690023BA08 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA5FFC61E4C33690023BA08 /* GLKit.framework */; };
@@ -22,7 +20,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				EAA5FFB91E4C32520023BA08 /* TLGLLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,8 +27,6 @@
 
 /* Begin PBXFileReference section */
 		EAA5FFB31E4C32520023BA08 /* libTLGLLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTLGLLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAA5FFB61E4C32520023BA08 /* TLGLLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLGLLib.h; sourceTree = "<group>"; };
-		EAA5FFB71E4C32520023BA08 /* TLGLLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLGLLib.m; sourceTree = "<group>"; };
 		EAA5FFBF1E4C32A70023BA08 /* TLGLKContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGLKContext.h; sourceTree = "<group>"; };
 		EAA5FFC01E4C32A70023BA08 /* TLGLKContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLGLKContext.m; sourceTree = "<group>"; };
 		EAA5FFC11E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
@@ -77,8 +72,6 @@
 				EAA5FFC01E4C32A70023BA08 /* TLGLKContext.m */,
 				EAA5FFC11E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.h */,
 				EAA5FFC21E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m */,
-				EAA5FFB61E4C32520023BA08 /* TLGLLib.h */,
-				EAA5FFB71E4C32520023BA08 /* TLGLLib.m */,
 			);
 			path = TLGLLib;
 			sourceTree = "<group>";
@@ -152,7 +145,6 @@
 			files = (
 				EAA5FFC41E4C32A70023BA08 /* TLGLKVertexAttribArrayBuffer.m in Sources */,
 				EAA5FFC31E4C32A70023BA08 /* TLGLKContext.m in Sources */,
-				EAA5FFB81E4C32520023BA08 /* TLGLLib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

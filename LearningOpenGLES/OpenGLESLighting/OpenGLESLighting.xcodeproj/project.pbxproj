@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAA5FFDC1E4C50970023BA08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFDB1E4C50970023BA08 /* main.m */; };
+		EAA5FFDF1E4C50970023BA08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFDE1E4C50970023BA08 /* AppDelegate.m */; };
+		EAA5FFE51E4C50970023BA08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA5FFE31E4C50970023BA08 /* Main.storyboard */; };
+		EAA5FFE71E4C50970023BA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA5FFE61E4C50970023BA08 /* Assets.xcassets */; };
+		EAA5FFEA1E4C50970023BA08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA5FFE81E4C50970023BA08 /* LaunchScreen.storyboard */; };
+		EAA5FFF31E4C50E10023BA08 /* libTLGLLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA5FFF21E4C50E10023BA08 /* libTLGLLib.a */; };
+		EAA5FFF51E4C50EC0023BA08 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA5FFF41E4C50EC0023BA08 /* GLKit.framework */; };
+		EAA5FFF71E4C50F20023BA08 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA5FFF61E4C50F20023BA08 /* OpenGLES.framework */; };
+		EAA5FFFA1E4C51240023BA08 /* LightingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFF91E4C51240023BA08 /* LightingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EAA5FFD71E4C50970023BA08 /* OpenGLESLighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESLighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA5FFDB1E4C50970023BA08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAA5FFDD1E4C50970023BA08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAA5FFDE1E4C50970023BA08 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAA5FFE41E4C50970023BA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAA5FFE61E4C50970023BA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAA5FFE91E4C50970023BA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAA5FFEB1E4C50970023BA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA5FFF21E4C50E10023BA08 /* libTLGLLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTLGLLib.a; path = "../../../../../../Users/tony/Library/Developer/Xcode/DerivedData/LearningOpenGLES-axluxdsiuuuywmfzacqnvhwmpwmn/Build/Products/Debug-iphonesimulator/libTLGLLib.a"; sourceTree = "<group>"; };
+		EAA5FFF41E4C50EC0023BA08 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		EAA5FFF61E4C50F20023BA08 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EAA5FFF81E4C51240023BA08 /* LightingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightingViewController.h; sourceTree = "<group>"; };
+		EAA5FFF91E4C51240023BA08 /* LightingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAA5FFD41E4C50970023BA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA5FFF71E4C50F20023BA08 /* OpenGLES.framework in Frameworks */,
+				EAA5FFF51E4C50EC0023BA08 /* GLKit.framework in Frameworks */,
+				EAA5FFF31E4C50E10023BA08 /* libTLGLLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAA5FFCE1E4C50970023BA08 = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFD91E4C50970023BA08 /* OpenGLESLighting */,
+				EAA5FFD81E4C50970023BA08 /* Products */,
+				EAA5FFF11E4C50E10023BA08 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EAA5FFD81E4C50970023BA08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFD71E4C50970023BA08 /* OpenGLESLighting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAA5FFD91E4C50970023BA08 /* OpenGLESLighting */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFDD1E4C50970023BA08 /* AppDelegate.h */,
+				EAA5FFDE1E4C50970023BA08 /* AppDelegate.m */,
+				EAA5FFE31E4C50970023BA08 /* Main.storyboard */,
+				EAA5FFE61E4C50970023BA08 /* Assets.xcassets */,
+				EAA5FFE81E4C50970023BA08 /* LaunchScreen.storyboard */,
+				EAA5FFEB1E4C50970023BA08 /* Info.plist */,
+				EAA5FFDA1E4C50970023BA08 /* Supporting Files */,
+				EAA5FFF81E4C51240023BA08 /* LightingViewController.h */,
+				EAA5FFF91E4C51240023BA08 /* LightingViewController.m */,
+			);
+			path = OpenGLESLighting;
+			sourceTree = "<group>";
+		};
+		EAA5FFDA1E4C50970023BA08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFDB1E4C50970023BA08 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAA5FFF11E4C50E10023BA08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA5FFF61E4C50F20023BA08 /* OpenGLES.framework */,
+				EAA5FFF41E4C50EC0023BA08 /* GLKit.framework */,
+				EAA5FFF21E4C50E10023BA08 /* libTLGLLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAA5FFD61E4C50970023BA08 /* OpenGLESLighting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA5FFEE1E4C50970023BA08 /* Build configuration list for PBXNativeTarget "OpenGLESLighting" */;
+			buildPhases = (
+				EAA5FFD31E4C50970023BA08 /* Sources */,
+				EAA5FFD41E4C50970023BA08 /* Frameworks */,
+				EAA5FFD51E4C50970023BA08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLESLighting;
+			productName = OpenGLESLighting;
+			productReference = EAA5FFD71E4C50970023BA08 /* OpenGLESLighting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAA5FFCF1E4C50970023BA08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Tony;
+				TargetAttributes = {
+					EAA5FFD61E4C50970023BA08 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UVLX4292NF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EAA5FFD21E4C50970023BA08 /* Build configuration list for PBXProject "OpenGLESLighting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAA5FFCE1E4C50970023BA08;
+			productRefGroup = EAA5FFD81E4C50970023BA08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAA5FFD61E4C50970023BA08 /* OpenGLESLighting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAA5FFD51E4C50970023BA08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA5FFEA1E4C50970023BA08 /* LaunchScreen.storyboard in Resources */,
+				EAA5FFE71E4C50970023BA08 /* Assets.xcassets in Resources */,
+				EAA5FFE51E4C50970023BA08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAA5FFD31E4C50970023BA08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA5FFFA1E4C51240023BA08 /* LightingViewController.m in Sources */,
+				EAA5FFDF1E4C50970023BA08 /* AppDelegate.m in Sources */,
+				EAA5FFDC1E4C50970023BA08 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAA5FFE31E4C50970023BA08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA5FFE41E4C50970023BA08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAA5FFE81E4C50970023BA08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA5FFE91E4C50970023BA08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAA5FFEC1E4C50970023BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAA5FFED1E4C50970023BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAA5FFEF1E4C50970023BA08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVLX4292NF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../TLGLLib/**";
+				INFOPLIST_FILE = OpenGLESLighting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.OpenGLESLighting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAA5FFF01E4C50970023BA08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UVLX4292NF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../TLGLLib/**";
+				INFOPLIST_FILE = OpenGLESLighting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.OpenGLESLighting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAA5FFD21E4C50970023BA08 /* Build configuration list for PBXProject "OpenGLESLighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA5FFEC1E4C50970023BA08 /* Debug */,
+				EAA5FFED1E4C50970023BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA5FFEE1E4C50970023BA08 /* Build configuration list for PBXNativeTarget "OpenGLESLighting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA5FFEF1E4C50970023BA08 /* Debug */,
+				EAA5FFF01E4C50970023BA08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAA5FFCF1E4C50970023BA08 /* Project object */;
+}
