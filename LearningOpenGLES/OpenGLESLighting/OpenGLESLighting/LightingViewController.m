@@ -199,7 +199,8 @@ void updateTriangleFaceNormal(SceneTriangle *triangles);
             normalLineVertice[count++] = triangles[i].vertices[j].position;
             
             GLKVector3 v1 = triangles[i].vertices[j].position;
-            GLKVector3 v2 = triangles[i].vertices[j].normal;
+            // 缩短长度，由于法向量的长度为1，整个坐标系是-1到1
+            GLKVector3 v2 = GLKVector3MultiplyScalar(triangles[i].vertices[j].normal, 0.5);
             
             // 法向量线终点，赋值后count自增
             normalLineVertice[count++] = GLKVector3Add(v1, v2);
