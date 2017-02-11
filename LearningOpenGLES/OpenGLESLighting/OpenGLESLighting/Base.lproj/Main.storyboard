@@ -28,12 +28,20 @@
                                     <action selector="changeCenterVertexHeight:" destination="BYZ-38-t0r" eventType="valueChanged" id="3fh-aW-GXW"/>
                                 </connections>
                             </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Det-2h-vQ7">
+                                <rect key="frame" x="163" y="575" width="51" height="31"/>
+                                <connections>
+                                    <action selector="isDrawNormalsAndLightLines:" destination="BYZ-38-t0r" eventType="valueChanged" id="SD3-B6-WUl"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AKF-AN-XCp" secondAttribute="bottom" constant="100" id="TVr-JD-cyP"/>
+                            <constraint firstItem="Det-2h-vQ7" firstAttribute="top" secondItem="AKF-AN-XCp" secondAttribute="bottom" constant="8" id="5gD-OV-Znh"/>
+                            <constraint firstItem="Det-2h-vQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gbu-WD-AaX"/>
                             <constraint firstItem="AKF-AN-XCp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="bID-2f-eRh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AKF-AN-XCp" secondAttribute="trailing" constant="15" id="pah-di-DRE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Det-2h-vQ7" secondAttribute="bottom" constant="61" id="ujP-C1-W6m"/>
                         </constraints>
                     </view>
                 </viewController>

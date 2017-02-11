@@ -11,5 +11,6 @@
 @interface LightingViewController : GLKViewController
 
 - (IBAction)changeCenterVertexHeight:(UISlider *)sender;
+- (IBAction)isDrawNormalsAndLightLines:(UISwitch *)sender;
 
 @end
