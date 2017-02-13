@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OpenGLESViewPort/OpenGLESViewPort.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OpenGLESLighting/OpenGLESLighting.xcodeproj">
    </FileRef>
    <FileRef

@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0731D91E519B3A00B334CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0731D81E519B3A00B334CD /* main.m */; };
+		EA0731DC1E519B3A00B334CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0731DB1E519B3A00B334CD /* AppDelegate.m */; };
+		EA0731E21E519B3A00B334CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0731E01E519B3A00B334CD /* Main.storyboard */; };
+		EA0731E41E519B3A00B334CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0731E31E519B3A00B334CD /* Assets.xcassets */; };
+		EA0731E71E519B3A00B334CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA0731E51E519B3A00B334CD /* LaunchScreen.storyboard */; };
+		EA0731F01E519B4C00B334CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0731EF1E519B4C00B334CD /* ViewController.m */; };
+		EA0731F31E519B6000B334CD /* libTLGLLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0731F21E519B6000B334CD /* libTLGLLib.a */; };
+		EA0731F51E519B6700B334CD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0731F41E519B6700B334CD /* GLKit.framework */; };
+		EA0731F71E519B6D00B334CD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0731F61E519B6D00B334CD /* OpenGLES.framework */; };
+		EA40AFCC1E51A11900FADB03 /* Earth512x256.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA40AFCB1E51A11900FADB03 /* Earth512x256.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA0731D41E519B3A00B334CD /* OpenGLESViewPort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESViewPort.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0731D81E519B3A00B334CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA0731DA1E519B3A00B334CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA0731DB1E519B3A00B334CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA0731E11E519B3A00B334CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA0731E31E519B3A00B334CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA0731E61E519B3A00B334CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA0731E81E519B3A00B334CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA0731EE1E519B4C00B334CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EA0731EF1E519B4C00B334CD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EA0731F21E519B6000B334CD /* libTLGLLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTLGLLib.a; path = "../../../../../../Users/tony/Library/Developer/Xcode/DerivedData/LearningOpenGLES-axluxdsiuuuywmfzacqnvhwmpwmn/Build/Products/Debug-iphoneos/libTLGLLib.a"; sourceTree = "<group>"; };
+		EA0731F41E519B6700B334CD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		EA0731F61E519B6D00B334CD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EA40AFCA1E519EE000FADB03 /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		EA40AFCB1E51A11900FADB03 /* Earth512x256.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth512x256.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA0731D11E519B3A00B334CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0731F71E519B6D00B334CD /* OpenGLES.framework in Frameworks */,
+				EA0731F51E519B6700B334CD /* GLKit.framework in Frameworks */,
+				EA0731F31E519B6000B334CD /* libTLGLLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA0731CB1E519B3A00B334CD = {
+			isa = PBXGroup;
+			children = (
+				EA40AFCB1E51A11900FADB03 /* Earth512x256.jpg */,
+				EA0731D61E519B3A00B334CD /* OpenGLESViewPort */,
+				EA0731D51E519B3A00B334CD /* Products */,
+				EA0731F11E519B6000B334CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA0731D51E519B3A00B334CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA0731D41E519B3A00B334CD /* OpenGLESViewPort.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0731D61E519B3A00B334CD /* OpenGLESViewPort */ = {
+			isa = PBXGroup;
+			children = (
+				EA40AFCA1E519EE000FADB03 /* sphere.h */,
+				EA0731DA1E519B3A00B334CD /* AppDelegate.h */,
+				EA0731DB1E519B3A00B334CD /* AppDelegate.m */,
+				EA0731E01E519B3A00B334CD /* Main.storyboard */,
+				EA0731E31E519B3A00B334CD /* Assets.xcassets */,
+				EA0731E51E519B3A00B334CD /* LaunchScreen.storyboard */,
+				EA0731E81E519B3A00B334CD /* Info.plist */,
+				EA0731D71E519B3A00B334CD /* Supporting Files */,
+				EA0731EE1E519B4C00B334CD /* ViewController.h */,
+				EA0731EF1E519B4C00B334CD /* ViewController.m */,
+			);
+			path = OpenGLESViewPort;
+			sourceTree = "<group>";
+		};
+		EA0731D71E519B3A00B334CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA0731D81E519B3A00B334CD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA0731F11E519B6000B334CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA0731F61E519B6D00B334CD /* OpenGLES.framework */,
+				EA0731F41E519B6700B334CD /* GLKit.framework */,
+				EA0731F21E519B6000B334CD /* libTLGLLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA0731D31E519B3A00B334CD /* OpenGLESViewPort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0731EB1E519B3A00B334CD /* Build configuration list for PBXNativeTarget "OpenGLESViewPort" */;
+			buildPhases = (
+				EA0731D01E519B3A00B334CD /* Sources */,
+				EA0731D11E519B3A00B334CD /* Frameworks */,
+				EA0731D21E519B3A00B334CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLESViewPort;
+			productName = OpenGLESViewPort;
+			productReference = EA0731D41E519B3A00B334CD /* OpenGLESViewPort.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA0731CC1E519B3A00B334CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Tony;
+				TargetAttributes = {
+					EA0731D31E519B3A00B334CD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UVLX4292NF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EA0731CF1E519B3A00B334CD /* Build configuration list for PBXProject "OpenGLESViewPort" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA0731CB1E519B3A00B334CD;
+			productRefGroup = EA0731D51E519B3A00B334CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA0731D31E519B3A00B334CD /* OpenGLESViewPort */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0731D21E519B3A00B334CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA40AFCC1E51A11900FADB03 /* Earth512x256.jpg in Resources */,
+				EA0731E71E519B3A00B334CD /* LaunchScreen.storyboard in Resources */,
+				EA0731E41E519B3A00B334CD /* Assets.xcassets in Resources */,
+				EA0731E21E519B3A00B334CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA0731D01E519B3A00B334CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0731F01E519B4C00B334CD /* ViewController.m in Sources */,
+				EA0731DC1E519B3A00B334CD /* AppDelegate.m in Sources */,
+				EA0731D91E519B3A00B334CD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA0731E01E519B3A00B334CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0731E11E519B3A00B334CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA0731E51E519B3A00B334CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA0731E61E519B3A00B334CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA0731E91E519B3A00B334CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA0731EA1E519B3A00B334CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA0731EC1E519B3A00B334CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = UVLX4292NF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../TLGLLib/**";
+				INFOPLIST_FILE = OpenGLESViewPort/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.OpenGLESViewPort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA0731ED1E519B3A00B334CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = UVLX4292NF;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../TLGLLib/**";
+				INFOPLIST_FILE = OpenGLESViewPort/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.OpenGLESViewPort;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA0731CF1E519B3A00B334CD /* Build configuration list for PBXProject "OpenGLESViewPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0731E91E519B3A00B334CD /* Debug */,
+				EA0731EA1E519B3A00B334CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0731EB1E519B3A00B334CD /* Build configuration list for PBXNativeTarget "OpenGLESViewPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0731EC1E519B3A00B334CD /* Debug */,
+				EA0731ED1E519B3A00B334CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA0731CC1E519B3A00B334CD /* Project object */;
+}
