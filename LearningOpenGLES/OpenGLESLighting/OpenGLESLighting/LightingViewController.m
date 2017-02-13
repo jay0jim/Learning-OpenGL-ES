@@ -16,19 +16,20 @@
 typedef struct {
     GLKVector3  position; // 位置坐标
     GLKVector3  normal; // 法向量
+    GLKVector2  texture; // 纹理坐标
 } SceneVertex;
 
 ///////////////////////////////////////////////////////////////
 // 顶点
-SceneVertex vertexA = {{-0.5,  0.5, -0.5}, {0.0, 0.0, 1.0}};
-SceneVertex vertexB = {{-0.5,  0.0, -0.5}, {0.0, 0.0, 1.0}};
-SceneVertex vertexC = {{-0.5, -0.5, -0.5}, {0.0, 0.0, 1.0}};
-SceneVertex vertexD = {{ 0.0,  0.5, -0.5}, {0.0, 0.0, 1.0}};
-SceneVertex vertexE = {{ 0.0,  0.0,  0.0}, {0.0, 0.0, 1.0}};
-SceneVertex vertexF = {{ 0.0, -0.5, -0.5}, {0.0, 0.0, 1.0}};
-SceneVertex vertexG = {{ 0.5,  0.5, -0.5}, {0.0, 0.0, 1.0}};
-SceneVertex vertexH = {{ 0.5,  0.0, -0.5}, {0.0, 0.0, 1.0}};
-SceneVertex vertexI = {{ 0.5, -0.5, -0.5}, {0.0, 0.0, 1.0}};
+SceneVertex vertexA = {{-0.5,  0.5, -0.5}, {0.0, 0.0, 1.0}, {0.0, 1.0}};
+SceneVertex vertexB = {{-0.5,  0.0, -0.5}, {0.0, 0.0, 1.0}, {0.0, 0.5}};
+SceneVertex vertexC = {{-0.5, -0.5, -0.5}, {0.0, 0.0, 1.0}, {0.0, 0.0}};
+SceneVertex vertexD = {{ 0.0,  0.5, -0.5}, {0.0, 0.0, 1.0}, {0.5, 1.0}};
+SceneVertex vertexE = {{ 0.0,  0.0,  0.0}, {0.0, 0.0, 1.0}, {0.5, 0.5}};
+SceneVertex vertexF = {{ 0.0, -0.5, -0.5}, {0.0, 0.0, 1.0}, {0.5, 0.0}};
+SceneVertex vertexG = {{ 0.5,  0.5, -0.5}, {0.0, 0.0, 1.0}, {1.0, 1.0}};
+SceneVertex vertexH = {{ 0.5,  0.0, -0.5}, {0.0, 0.0, 1.0}, {1.0, 0.5}};
+SceneVertex vertexI = {{ 0.5, -0.5, -0.5}, {0.0, 0.0, 1.0}, {1.0, 0.0}};
 
 ///////////////////////////////////////////////////////////////
 // 三角形结构体
@@ -69,8 +70,14 @@ void updateTriangleFaceNormal(SceneTriangle *triangles);
 
 @property (nonatomic) GLKBaseEffect *baseEffect;
 @property (nonatomic) GLKBaseEffect *extraEffect;
+@property (nonatomic) GLKBaseEffect *textureEffect;
 
 @property (nonatomic, assign) BOOL isDrawLines;
+@property (nonatomic, assign) BOOL isUseTexture;
+@property (nonatomic, assign) BOOL shouldShowDetail;
+
+@property (nonatomic) GLKTextureInfo *clearTextureInfo;
+@property (nonatomic) GLKTextureInfo *detailTextureInfo;
 
 @end
 
@@ -98,6 +105,16 @@ void updateTriangleFaceNormal(SceneTriangle *triangles);
     _extraEffect.useConstantColor = GL_TRUE;
     _extraEffect.constantColor = GLKVector4Make(0.0, 1.0, 0.0, 1.0);
     
+    // 纹理
+    _textureEffect = [[GLKBaseEffect alloc] init];
+    _textureEffect.useConstantColor = GL_TRUE;
+    _textureEffect.constantColor = GLKVector4Make(1.0, 1.0, 1.0, 1.0);
+    
+    CGImageRef imageRef0 = [[UIImage imageNamed:@"LightingDetail256x256.png"] CGImage];
+    _detailTextureInfo = [GLKTextureLoader textureWithCGImage:imageRef0 options:@{GLKTextureLoaderOriginBottomLeft: @(YES)} error:nil];
+    CGImageRef imageRef1 = [[UIImage imageNamed:@"Lighting256x256.png"] CGImage];
+    _clearTextureInfo = [GLKTextureLoader textureWithCGImage:imageRef1 options:@{GLKTextureLoaderOriginBottomLeft: @(YES)} error:nil];
+    
     // 旋转视角
     {  // Comment out this block to render the scene top down
         GLKMatrix4 modelViewMatrix = GLKMatrix4MakeRotation(
@@ -111,6 +128,7 @@ void updateTriangleFaceNormal(SceneTriangle *triangles);
         
         self.baseEffect.transform.modelviewMatrix = modelViewMatrix;
         self.extraEffect.transform.modelviewMatrix = modelViewMatrix;
+        _textureEffect.transform.modelviewMatrix = modelViewMatrix;
     }
     
     [self builtTriangles];
@@ -130,26 +148,35 @@ void updateTriangleFaceNormal(SceneTriangle *triangles);
     
     // 默认显示法向量线
     _isDrawLines = YES;
+    // 默认使用灯光
+    _isUseTexture = NO;
+    // 如使用纹理，则默认显示细节
+    _shouldShowDetail = YES;
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     
     [_context clear:GL_COLOR_BUFFER_BIT];
     
-    ////////////////////////////////////////////////////////////
-    // 绘制图形
-    [_baseEffect prepareToDraw];
-    
-    // 位置
-    [_vertexBuffer prepareToDrawWithAttrib:GLKVertexAttribPosition numberOfCoordinates:3 attribOffset:offsetof(SceneVertex, position) shouldEnable:YES];
-    // 法线
-    [_vertexBuffer prepareToDrawWithAttrib:GLKVertexAttribNormal numberOfCoordinates:3 attribOffset:offsetof(SceneVertex, normal) shouldEnable:YES];
-    
-    [_vertexBuffer drawArrayWithMode:GL_TRIANGLES startVertexIndex:0 numberOfVertices:sizeof(triangles)/sizeof(SceneVertex)];
+    if (!_isUseTexture) {
+        ////////////////////////////////////////////////////////////
+        // 绘制图形
+        [_baseEffect prepareToDraw];
+        
+        // 位置
+        [_vertexBuffer prepareToDrawWithAttrib:GLKVertexAttribPosition numberOfCoordinates:3 attribOffset:offsetof(SceneVertex, position) shouldEnable:YES];
+        // 法线
+        [_vertexBuffer prepareToDrawWithAttrib:GLKVertexAttribNormal numberOfCoordinates:3 attribOffset:offsetof(SceneVertex, normal) shouldEnable:YES];
+        
+        [_vertexBuffer drawArrayWithMode:GL_TRIANGLES startVertexIndex:0 numberOfVertices:sizeof(triangles)/sizeof(SceneVertex)];
+    } else {
+        [self drawTexture];
+    }
     
     ////////////////////////////////////////////////////////////
     // 绘制法向量线
-    if (_isDrawLines) {
+    // 使用纹理后，就不能绘制光线和法向量，
+    if (_isDrawLines && !_isUseTexture) {
         
         [self drawNormalsAndLightLines];
     }
@@ -184,6 +211,45 @@ void updateTriangleFaceNormal(SceneTriangle *triangles);
 
 - (void)isDrawNormalsAndLightLines:(UISwitch *)sender {
     _isDrawLines = sender.isOn;
+}
+
+- (void)shouldUseTexture:(UISwitch *)sender {
+    
+    _isUseTexture = sender.isOn;
+    
+    // 启用 是否显示细节label与开关，并禁用 绘制光线开关
+    _textureLabel.hidden = !sender.isOn;
+    _textureSwitch.hidden = !sender.isOn;
+    _linesSwitch.hidden = sender.isOn;
+    
+}
+
+- (void)shouldShowTextureDetail:(UISwitch *)sender {
+    _shouldShowDetail = sender.isOn;
+}
+
+#pragma mark - 纹理操作
+- (void)drawTexture {
+    
+    if (_shouldShowDetail) {
+        
+        _textureEffect.texture2d0.name = _detailTextureInfo.name;
+        _textureEffect.texture2d0.target = _detailTextureInfo.target;
+    } else {
+        
+        _textureEffect.texture2d0.name = _clearTextureInfo.name;
+        _textureEffect.texture2d0.target = _clearTextureInfo.target;
+    }
+    
+    // 位置坐标
+    [_vertexBuffer prepareToDrawWithAttrib:GLKVertexAttribPosition numberOfCoordinates:3 attribOffset:offsetof(SceneVertex, position) shouldEnable:YES];
+    // 纹理坐标
+    [_vertexBuffer prepareToDrawWithAttrib:GLKVertexAttribTexCoord0 numberOfCoordinates:2 attribOffset:offsetof(SceneVertex, texture) shouldEnable:YES];
+    
+    [_textureEffect prepareToDraw];
+    [_vertexBuffer drawArrayWithMode:GL_TRIANGLES startVertexIndex:0 numberOfVertices:sizeof(triangles)/sizeof(SceneVertex)];
+    
+    
 }
 
 #pragma mark - 绘制法向量线和光线

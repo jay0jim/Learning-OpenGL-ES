@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA07319D1E51865700B334CD /* Lighting256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = EA07319B1E51865700B334CD /* Lighting256x256.png */; };
+		EA07319E1E51865700B334CD /* LightingDetail256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = EA07319C1E51865700B334CD /* LightingDetail256x256.png */; };
 		EAA5FFDC1E4C50970023BA08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFDB1E4C50970023BA08 /* main.m */; };
 		EAA5FFDF1E4C50970023BA08 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA5FFDE1E4C50970023BA08 /* AppDelegate.m */; };
 		EAA5FFE51E4C50970023BA08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA5FFE31E4C50970023BA08 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA07319B1E51865700B334CD /* Lighting256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lighting256x256.png; sourceTree = "<group>"; };
+		EA07319C1E51865700B334CD /* LightingDetail256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightingDetail256x256.png; sourceTree = "<group>"; };
 		EAA5FFD71E4C50970023BA08 /* OpenGLESLighting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESLighting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA5FFDB1E4C50970023BA08 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAA5FFDD1E4C50970023BA08 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		EAA5FFCE1E4C50970023BA08 = {
 			isa = PBXGroup;
 			children = (
+				EA07319B1E51865700B334CD /* Lighting256x256.png */,
+				EA07319C1E51865700B334CD /* LightingDetail256x256.png */,
 				EAA5FFD91E4C50970023BA08 /* OpenGLESLighting */,
 				EAA5FFD81E4C50970023BA08 /* Products */,
 				EAA5FFF11E4C50E10023BA08 /* Frameworks */,
@@ -160,6 +166,8 @@
 			files = (
 				EAA5FFEA1E4C50970023BA08 /* LaunchScreen.storyboard in Resources */,
 				EAA5FFE71E4C50970023BA08 /* Assets.xcassets in Resources */,
+				EA07319D1E51865700B334CD /* Lighting256x256.png in Resources */,
+				EA07319E1E51865700B334CD /* LightingDetail256x256.png in Resources */,
 				EAA5FFE51E4C50970023BA08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +302,7 @@
 				DEVELOPMENT_TEAM = UVLX4292NF;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../TLGLLib/**";
 				INFOPLIST_FILE = OpenGLESLighting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.OpenGLESLighting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +316,7 @@
 				DEVELOPMENT_TEAM = UVLX4292NF;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../TLGLLib/**";
 				INFOPLIST_FILE = OpenGLESLighting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.OpenGLESLighting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -332,6 +342,7 @@
 				EAA5FFF01E4C50970023BA08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
